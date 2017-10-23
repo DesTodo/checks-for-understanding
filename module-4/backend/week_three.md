@@ -10,10 +10,10 @@ Express is a node web app framework; Express is to JS as Sinatra is to Ruby in t
 
 3. How do we setup a route when creating an API with Node and Express? Please provide a code snippet.
 // HTTP verb + URL + controller + action
-app.get('/api/v1/foods', FoodsController.indexFood)
+```app.get('/api/v1/foods', FoodsController.indexFood)
 app.post('/api/v1/foods', FoodsController.createFood)
 app.put('/api/v1/foods/:id', FoodsController.editFood)
-app.delete('/api/v1/foods/:id', FoodsController.deleteFood)
+app.delete('/api/v1/foods/:id', FoodsController.deleteFood)```
 
 *if a controller and model objects not created yet, the second argument would be a function(request, response){} to handle the request and response data
 
@@ -32,7 +32,7 @@ request and response data
 
 C: routes: specify HTTP verb and pass URL and controller object function as arguments
 
-Example: app.get('/api/v1/foods', FoodsController.indexFood) demosntrates Rails like routing pattern where a verb and URL are routed to a controller and a specific action within that controller
+Example: ```app.get('/api/v1/foods', FoodsController.indexFood)``` demosntrates Rails like routing pattern where a verb and URL are routed to a controller and a specific action within that controller
 
 6. How do you execute raw SQL in node?
 
